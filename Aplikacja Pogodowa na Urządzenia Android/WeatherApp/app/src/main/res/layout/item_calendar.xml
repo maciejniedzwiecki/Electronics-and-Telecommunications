@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="15dp">
+
+    <!-- Kontener CardView z elementami interfejsu użytkownika -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentPadding="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#F1F1F1">
+
+        <!-- Układ liniowy poziomy -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- Pionowy układ liniowy (lewa strona) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <!-- Ikona pogody -->
+                <ImageView
+                    android:id="@+id/itemCalendarImage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/clear_sky" />
+
+                <!-- Opis pogody -->
+                <TextView
+                    android:id="@+id/itemCalendarDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Słonecznie"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <!-- Układ liniowy poziomy (dla temperatury) -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- Temperatura -->
+                    <TextView
+                        android:id="@+id/itemCalendarWeatherTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19.2"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <!-- Symbol stopni Celsjusza -->
+                    <TextView
+                        android:id="@+id/itemCalendarCelc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="°"
+                        android:textColor="@color/purple_500"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Pionowy układ liniowy (prawa strona) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <!-- Data -->
+                <TextView
+                    android:id="@+id/itemCalendarDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="end"
+                    android:text="2023-09-03"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <!-- Układ liniowy poziomy (dla ikon opadów deszczu, indeksu UV i prędkości wiatru) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal">
+
+                    <!-- Pionowy układ liniowy (dla opadów deszczu) -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <!-- Ikona opadów deszczu -->
+                        <ImageView
+                            android:id="@+id/itemCalendarRainIcon"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/rain_icon" />
+
+                        <!-- Prawdopodobieństwo opadów deszczu -->
+                        <TextView
+                            android:id="@+id/itemCalendarRainProbability"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <!-- Pionowy układ liniowy (dla indeksu UV) -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <!-- Ikona indeksu UV -->
+                        <ImageView
+                            android:id="@+id/itemCalendarUv"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/uv_index_icon" />
+
+                        <!-- Indeks UV -->
+                        <TextView
+                            android:id="@+id/itemCalendarUvIndex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <!-- Pionowy układ liniowy (dla prędkości wiatru) -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <!-- Ikona prędkości wiatru -->
+                        <ImageView
+                            android:id="@+id/itemCalendarWind"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/wind_icon" />
+
+                        <!-- Prędkość wiatru -->
+                        <TextView
+                            android:id="@+id/itemCalendarWindSpeed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
