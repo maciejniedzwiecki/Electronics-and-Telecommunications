@@ -1,0 +1,28 @@
+********** Discrete JFET Electrical Parameters *************
+** Product: 2N5459
+** Package: TO-92
+** 2N5459 model is compatible with MMBF5459.
+**----------------------------------------------------------
+.MODEL J2N5459 NJF
++ VTO=-3.7
++ BETA=8.5247E-4
++ LAMBDA=8.8021E-3
++ ALPHA=5.0E-7
++ VK=30
++ RD=1.02
++ RS=1.03
++ N=1.0
++ IS=4.0937e-15
++ ISR=8.7937e-13
++ CGD=5.8248E-12
++ CGS=3.8836E-12
++ M=0.38
++ PB=0.664
++ KF=1.3542E-6
++ AF=1.9123E-3
++ BETATCE=-0.46
++ VTOTC=-2.50E-3
+**----------------------------------------------------------
+** Creation: Mar.-05-2008   Rev: 0.0
+** Fairchild Semiconductor
+
