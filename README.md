@@ -5,7 +5,7 @@ My name is Maciej Niedzwiecki. I am a student of the Poznan University of Techno
 ### Symulacja Kodera Polaryzacjnego
 Simulation of polar encoder used in modern telecommunications. Polar codes are error-correcting codes that play an important role in 5G networks. The project implements encoding algorithms and analyzes their performance.<br>Technologies: Python
 
-### Interfejs do kontroli i analizy USRP
+### Interfejs do Kontroli i Analizy USRP
 Simple interface for controlling USRP devices and analyzing radio signals. The application provides basic controls for software-defined radio operations and real-time signal monitoring with data storage capabilities.<br>Technologies: Dash, MongoDB
 
 ### Dashboard czujników LoRa
