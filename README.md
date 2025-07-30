@@ -11,7 +11,7 @@ Simple interface for controlling USRP devices and analyzing radio signals. The a
 ### Dashboard czujników LoRa
 Data visualization dashboard for LoRa IoT sensors. Displays sensor readings in real-time with interactive charts and monitoring features across multiple visualization platforms.<br>Technologies: Dash, Grafana
 
-### Aplikacja To Do na Urządzenio iOS
+### Aplikacja To Do na Urządzenia iOS
 Basic task management app for iOS devices. Includes functionality for creating, editing, and organizing tasks with a clean, user-friendly interface designed from scratch.<br>Technologies: Swift, Figma
 
 ### Ray Launcher w Moim Pokoju
