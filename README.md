@@ -1,20 +1,27 @@
 # Electronics and Telecommunications 📡
-
 My name is Maciej Niedzwiecki. I am a student of the Poznan University of Technology in the field of Electronics and Telecommunications. In this repository you can find files related to my field of study. Feel free to contact me.
 
 ## My projects 🤓
+### Symulacja Kodera Polaryzacjnego
+Simulation of polar encoder used in modern telecommunications. Polar codes are error-correcting codes that play an important role in 5G networks. The project implements encoding algorithms and analyzes their performance.<br>Technologies: Python
 
-### Aplikacja Pogodowa na Urządzenia Android
-The project involved writing a weather forecast application with the ability to search for a forecast based on the date provided by the user. 
+### Interfejs do kontroli i analizy USRP
+Simple interface for controlling USRP devices and analyzing radio signals. The application provides basic controls for software-defined radio operations and real-time signal monitoring with data storage capabilities.<br>Technologies: Dash, MongoDB
 
-### Komputerowa Analiza Źródła Prądowego
-The files contain the analysis of a 'current source with a field-effect and bipolar transistor' through numerous simulations in the LTspice program dedicated to testing electronic devices.
+### Dashboard czujników LoRa
+Data visualization dashboard for LoRa IoT sensors. Displays sensor readings in real-time with interactive charts and monitoring features across multiple visualization platforms.<br>Technologies: Dash, Grafana
 
-### Projekt Łącza Światłowodowego
-The file contains the designed fiber optic connector. The main task was to meet the design assumptions by calculating the individual parameters and selecting the appropriate components.
+### Aplikacja To Do na Urządzenio iOS
+Basic task management app for iOS devices. Includes functionality for creating, editing, and organizing tasks with a clean, user-friendly interface designed from scratch.<br>Technologies: Swift, Figma
 
 ### Ray Launcher w Moim Pokoju
-This project was focused on studying the reflection of a radio signal bouncing off the walls of a room by simulating appropriate cases in Python.
+Radio wave propagation simulation in indoor environment. The project studies signal reflection patterns in a room using simulations to analyze multipath effects.<br>Technologies: Python
 
 ### Symulacja Systemu Transmisji TCM (Trellis Coded Modulation)
-In this project, I had the opportunity to work in a group.  The Python program simulates the TCM system.  My task was to code the GUI using the CustomTkinter extension.
+Group project implementing TCM transmission system simulation. The Python program models trellis-coded modulation with a custom graphical interface (my contribution focused on GUI development).<br>Technologies: Python, CustomTkinter
+
+### Aplikacja Pogodowa na Urządzenia Android
+Weather forecast application for Android with date-based search functionality. Users can check weather predictions for specific dates with a simple interface.<br>Technologies: Kotlin
+
+### Komputerowa Analiza Źródła Prądowego
+Computer analysis of current source circuits using field-effect and bipolar transistors. The project includes multiple simulations to study circuit behavior and characteristics.<br>Technologies: LTSpice
